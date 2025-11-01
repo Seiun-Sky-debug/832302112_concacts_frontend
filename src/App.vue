@@ -1,9 +1,9 @@
 <template>
   <el-container class="app-container">
-    <el-header class="app-header"> 前后端分离通讯录 (Vue + FastAPI) </el-header>
+    <el-header class="app-header"> 前后端分离通讯录喵 </el-header>
     <el-main>
       <div class="toolbar">
-        <el-button type="primary" :icon="Plus" @click="openAddDialog"> 添加联系人 </el-button>
+        <el-button type="primary" :icon="Plus" @click="openAddDialog"> 添加联系人喵 </el-button>
         <el-select
           v-model="selectedGroup"
           placeholder="按分组筛选"
@@ -65,15 +65,15 @@
   >
     <el-form :model="contactForm" label-width="80px">
       <el-form-item label="姓名">
-        <el-input v-model="contactForm.name" placeholder="请输入姓名" />
+        <el-input v-model="contactForm.name" placeholder="请输入姓名喵" />
       </el-form-item>
       <el-form-item label="电话">
-        <el-input v-model="contactForm.phone" placeholder="请输入电话号码" />
+        <el-input v-model="contactForm.phone" placeholder="请输入电话号码喵" />
       </el-form-item>
       <el-form-item label="分组">
         <el-select
           v-model="contactForm.group"
-          placeholder="选择或创建分组"
+          placeholder="选择或创建分组喵"
           filterable
           allow-create
           default-first-option
@@ -84,7 +84,7 @@
         </el-select>
       </el-form-item>
       <el-form-item label=" ">
-        <el-checkbox v-model="contactForm.is_pinned" label="将此联系人置顶" />
+        <el-checkbox v-model="contactForm.is_pinned" label="将此联系人置顶喵" />
       </el-form-item>
     </el-form>
 
@@ -136,7 +136,7 @@ async function fetchGroups() {
     const response = await axios.get(`${API_URL}/groups`)
     groupList.value = response.data
   } catch (error) {
-    console.error('获取分组列表失败', error)
+    console.error('获取分组列表失败了的说', error)
   }
 }
 
@@ -148,7 +148,7 @@ async function fetchContacts() {
     contacts.value = response.data
     await fetchGroups() // 同时更新分组列表
   } catch (error) {
-    ElMessage.error('获取联系人列表失败')
+    ElMessage.error('获取联系人列表失败了的说')
   } finally {
     loading.value = false
   }
@@ -158,11 +158,11 @@ async function fetchContacts() {
 async function createContact() {
   try {
     await axios.post(`${API_URL}/`, contactForm)
-    ElMessage.success('添加成功')
+    ElMessage.success('添加成功力')
     fetchContacts()
     dialogVisible.value = false
   } catch (error) {
-    ElMessage.error('添加失败，请检查输入')
+    ElMessage.error('添加失败力，请检查输入')
   }
 }
 
@@ -171,19 +171,19 @@ async function updateContact() {
   if (!currentContactId.value) return
   try {
     await axios.put(`${API_URL}/${currentContactId.value}`, contactForm)
-    ElMessage.success('修改成功')
+    ElMessage.success('修改成功力')
     fetchContacts()
     dialogVisible.value = false
   } catch (error) {
-    ElMessage.error('修改失败')
+    ElMessage.error('修改失败力')
   }
 }
 
 // API: 删除联系人
 async function handleDelete(id) {
   try {
-    await ElMessageBox.confirm('您确定要删除这位联系人吗?', '警告', {
-      confirmButtonText: '确定删除',
+    await ElMessageBox.confirm('您确定要抛弃这位联系人吗?', '警告', {
+      confirmButtonText: '我不要你了',
       cancelButtonText: '取消',
       type: 'warning',
     })
