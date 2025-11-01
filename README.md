@@ -30,6 +30,11 @@ This is the frontend application for the "Contacts Management" assignment, built
 
 2. **Clone the repository:** *(Note: This README is intended to be inside the project folder. The project itself should be created with `npm create vue@latest`)*
 
+```
+  git clone [https://github.com/Seiun-Sky-debug/832302112_concacts_frontend.git](https://github.com/Seiun-Sky-debug/832302112_concacts_frontend.git)
+  cd 832302112_concacts_frontend
+```
+
 3. **Install dependencies:**
     ```
     npm install
@@ -45,4 +50,5 @@ This is the frontend application for the "Contacts Management" assignment, built
     ```
     npm run build
     ```
+
     This will create a `dist` folder ready for deployment.
