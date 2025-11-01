@@ -1,54 +1,44 @@
-# 832302112_concacts_frontend
-EE308-Assignment1-frontend
+# .
 
-# Contacts App Frontend
+This template should help get you started developing with Vue 3 in Vite.
 
-This is the frontend application for the "Contacts Management" assignment, built with Vue.js.
+## Recommended IDE Setup
 
-## Features
-- Displays a list of all contacts.
+[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-- Allows adding, editing, and deleting contacts via a modal interface.
+## Recommended Browser Setup
 
-- Responsive and modern UI built with Element Plus.
+- Chromium-based browsers (Chrome, Edge, Brave, etc.):
+  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
+  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
+- Firefox:
+  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
 
-- Communicates with the FastAPI backend.
+## Customize configuration
 
-## Tech Stack
-- **Framework:** Vue 3 (with Composition API)
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-- **UI Library:** Element Plus
+## Project Setup
 
-- **HTTP Client:** Axios
-
-- **Build Tool:** Vite
-
-## Local Development Setup
-1. **Prerequisites:**
-    - Node.js 18+ (LTS)
-    - Git
-
-2. **Clone the repository:** *(Note: This README is intended to be inside the project folder. The project itself should be created with `npm create vue@latest`)*
-
-```
-  git clone [https://github.com/Seiun-Sky-debug/832302112_concacts_frontend.git](https://github.com/Seiun-Sky-debug/832302112_concacts_frontend.git)
-  cd 832302112_concacts_frontend
+```sh
+npm install
 ```
 
-3. **Install dependencies:**
-    ```
-    npm install
-    ```
+### Compile and Hot-Reload for Development
 
-4. **Run the development server:**
-    ```
-    npm run dev
-    ```
-    The server will start, typically on `http://localhost:5173`.
+```sh
+npm run dev
+```
 
-5. **Build for production:**
-    ```
-    npm run build
-    ```
+### Compile and Minify for Production
 
-    This will create a `dist` folder ready for deployment.
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
