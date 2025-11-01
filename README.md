@@ -1,44 +1,48 @@
-# .
+# 832302112_concacts_frontend
+EE308-Assignment1-frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+# Contacts App Frontend
 
-## Recommended IDE Setup
+This is the frontend application for the "Contacts Management" assignment, built with Vue.js.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Features
+- Displays a list of all contacts.
 
-## Recommended Browser Setup
+- Allows adding, editing, and deleting contacts via a modal interface.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- Responsive and modern UI built with Element Plus.
 
-## Customize configuration
+- Communicates with the FastAPI backend.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Tech Stack
+- **Framework:** Vue 3 (with Composition API)
 
-## Project Setup
+- **UI Library:** Element Plus
 
-```sh
-npm install
-```
+- **HTTP Client:** Axios
 
-### Compile and Hot-Reload for Development
+- **Build Tool:** Vite
 
-```sh
-npm run dev
-```
+## Local Development Setup
+1. **Prerequisites:**
+    - Node.js 18+ (LTS)
+    - Git
 
-### Compile and Minify for Production
+2. **Clone the repository:** *(Note: This README is intended to be inside the project folder. The project itself should be created with `npm create vue@latest`)*
 
-```sh
-npm run build
-```
+3. **Install dependencies:**
+    ```
+    npm install
+    ```
 
-### Lint with [ESLint](https://eslint.org/)
+4. **Run the development server:**
+    ```
+    npm run dev
+    ```
+    The server will start, typically on `http://localhost:5173`.
 
-```sh
-npm run lint
-```
+5. **Build for production:**
+    ```
+    npm run build
+    ```
+    This will create a `dist` folder ready for deployment.
